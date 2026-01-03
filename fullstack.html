@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Web Development - KritosTeach</title>
+    <meta name="description" content="Master Python programming from basics to advanced concepts. Build real-world projects and advance your career.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>KritosTeach</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn-primary">Sign Up</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <main>
+    <section class="course-header">
+        <div class="container">
+            <div class="course-info">
+                <div class="course-icon-large">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="course-details">
+                    <h1>Full-Stack Web Development Bootcamp</h1>
+                    <p>Master both frontend and backend technologies to build modern, responsive web applications. Learn HTML, CSS, JavaScript, React, Node.js, and databases to become a complete web developer.</p>
+                    <div class="course-meta">
+                        <span class="level"><i class="fas fa-signal"></i> Beginner to Advanced</span>
+                        <span class="duration"><i class="fas fa-clock"></i> 24 weeks</span>
+                        <span class="rating"><i class="fas fa-star"></i> 4.8 (3,156 reviews)</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-primary">Enroll Now - $149</button>
+                        <button class="btn-secondary">Add to Wishlist</button>
+                        <button class="btn-secondary">Preview Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-content">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="overview">Overview</button>
+                <button class="tab-button" data-tab="curriculum">Curriculum</button>
+                <button class="tab-button" data-tab="requirements">Requirements</button>
+                <button class="tab-button" data-tab="reviews">Reviews</button>
+                <button class="tab-button" data-tab="career">Career</button>
+            </div>
+
+            <div id="overview" class="tab-content active">
+                <h2>Course Overview</h2>
+                <p>This comprehensive Full-Stack Web Development Bootcamp takes you from zero to hero in web development. You'll learn both frontend and backend technologies, modern frameworks, and best practices to build complete web applications from scratch.</p>
+                <p>Through hands-on projects, real-world scenarios, and industry-relevant curriculum, you'll gain the skills needed to pursue careers as a Full-Stack Developer, Frontend Developer, Backend Developer, or Web Application Developer.</p>
+                
+                <div class="course-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-code"></i>
+                        <h4>Frontend Mastery</h4>
+                        <p>HTML5, CSS3, JavaScript, React.js</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-server"></i>
+                        <h4>Backend Expertise</h4>
+                        <p>Node.js, Express, REST APIs, Databases</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4>12+ Projects</h4>
+                        <p>Portfolio-ready applications</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Career Support</h4>
+                        <p>Resume prep & interview coaching</p>
+                    </div>
+                </div>
+                
+                <h3>What You'll Learn</h3>
+                <div class="learning-grid">
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>HTML5, CSS3, and responsive web design</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Modern JavaScript (ES6+) and TypeScript</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>React.js with Hooks and Context API</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Node.js, Express.js, and backend development</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>RESTful API design and development</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Database design with MongoDB and PostgreSQL</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Authentication, authorization, and security</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>DevOps basics: Git, Docker, Deployment</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Testing with Jest and React Testing Library</span>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Agile development and teamwork</span>
+                    </div>
+                </div>
+                
+                <h3>Technologies You'll Master</h3>
+                <div class="technologies">
+                    <div class="tech-stack">
+                        <h4>Frontend Stack</h4>
+                        <div class="tech-icons">
+                            <span class="tech-icon"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-icon"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-icon"><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span class="tech-icon"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-icon"><img src="https://img.icons8.com/color/24/000000/typescript.png" alt="TS"> TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <h4>Backend Stack</h4>
+                        <div class="tech-icons">
+                            <span class="tech-icon"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-icon"><i class="fas fa-server"></i> Express</span>
+                            <span class="tech-icon"><i class="fas fa-database"></i> MongoDB</span>
+                            <span class="tech-icon"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="tech-icon"><i class="fas fa-cloud"></i> REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <h4>Tools & DevOps</h4>
+                        <div class="tech-icons">
+                            <span class="tech-icon"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="tech-icon"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tech-icon"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="tech-icon"><i class="fas fa-terminal"></i> CLI</span>
+                            <span class="tech-icon"><i class="fas fa-vial"></i> Jest</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="curriculum" class="tab-content">
+                <h2>Course Curriculum</h2>
+                <div class="curriculum-stats">
+                    <div class="stat">
+                        <i class="fas fa-layer-group"></i>
+                        <span>8 Modules</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>12 Projects</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-video"></i>
+                        <span>150+ Lessons</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>300+ Hours</span>
+                    </div>
+                </div>
+                
+                <div class="curriculum">
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-paint-brush"></i> Module 1: Web Fundamentals (Weeks 1-4)</h3>
+                            <span class="module-duration">4 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> HTML5 Semantic Elements and Forms</li>
+                            <li><i class="far fa-check-circle"></i> CSS3: Flexbox, Grid, and Responsive Design</li>
+                            <li><i class="far fa-check-circle"></i> CSS Frameworks: Bootstrap & Tailwind</li>
+                            <li><i class="far fa-check-circle"></i> Git & GitHub for Version Control</li>
+                            <li><i class="far fa-check-circle"></i> Web Accessibility and SEO Basics</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Responsive Portfolio Website</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> E-commerce Landing Page</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fab fa-js-square"></i> Module 2: JavaScript Mastery (Weeks 5-8)</h3>
+                            <span class="module-duration">4 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> JavaScript Fundamentals and ES6+ Features</li>
+                            <li><i class="far fa-check-circle"></i> DOM Manipulation and Events</li>
+                            <li><i class="far fa-check-circle"></i> Asynchronous JavaScript (Promises, Async/Await)</li>
+                            <li><i class="far fa-check-circle"></i> APIs and Fetch API</li>
+                            <li><i class="far fa-check-circle"></i> TypeScript Fundamentals</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Weather Application</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Task Management App</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fab fa-react"></i> Module 3: React.js Development (Weeks 9-12)</h3>
+                            <span class="module-duration">4 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> React Components and Props</li>
+                            <li><i class="far fa-check-circle"></i> Hooks (useState, useEffect, useContext)</li>
+                            <li><i class="far fa-check-circle"></i> React Router for Navigation</li>
+                            <li><i class="far fa-check-circle"></i> State Management with Context API</li>
+                            <li><i class="far fa-check-circle"></i> Material-UI and Styled Components</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Social Media Dashboard</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> E-commerce Store Frontend</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fab fa-node-js"></i> Module 4: Backend with Node.js (Weeks 13-16)</h3>
+                            <span class="module-duration">4 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Node.js Fundamentals and NPM</li>
+                            <li><i class="far fa-check-circle"></i> Express.js Framework and Middleware</li>
+                            <li><i class="far fa-check-circle"></i> RESTful API Design and Development</li>
+                            <li><i class="far fa-check-circle"></i> Error Handling and Validation</li>
+                            <li><i class="far fa-check-circle"></i> File Uploads and Processing</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> REST API for Blog Platform</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Authentication Service</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-database"></i> Module 5: Databases (Weeks 17-19)</h3>
+                            <span class="module-duration">3 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> MongoDB with Mongoose ODM</li>
+                            <li><i class="far fa-check-circle"></i> PostgreSQL with Sequelize ORM</li>
+                            <li><i class="far fa-check-circle"></i> Database Design and Relationships</li>
+                            <li><i class="far fa-check-circle"></i> Query Optimization and Indexing</li>
+                            <li><i class="far fa-check-circle"></i> Database Transactions and ACID</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> E-commerce Database Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-user-shield"></i> Module 6: Authentication & Security (Weeks 20-21)</h3>
+                            <span class="module-duration">2 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> JWT Authentication and Authorization</li>
+                            <li><i class="far fa-check-circle"></i> OAuth 2.0 and Social Login</li>
+                            <li><i class="far fa-check-circle"></i> Password Hashing and Encryption</li>
+                            <li><i class="far fa-check-circle"></i> Web Security Best Practices</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Secure User Authentication System</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-tools"></i> Module 7: DevOps & Deployment (Weeks 22-23)</h3>
+                            <span class="module-duration">2 Weeks</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Docker Containerization</li>
+                            <li><i class="far fa-check-circle"></i> CI/CD Pipelines with GitHub Actions</li>
+                            <li><i class="far fa-check-circle"></i> Deployment to AWS, Heroku, Vercel</li>
+                            <li><i class="far fa-check-circle"></i> Testing with Jest and React Testing Library</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Project:</strong> Dockerized Full-Stack App</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-graduation-cap"></i> Module 8: Capstone Project (Week 24)</h3>
+                            <span class="module-duration">1 Week</span>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Full-Stack Application Development</li>
+                            <li><i class="far fa-check-circle"></i> Code Review and Optimization</li>
+                            <li><i class="far fa-check-circle"></i> Portfolio Presentation</li>
+                            <li><i class="far fa-check-circle"></i> Interview Preparation</li>
+                            <li><i class="far fa-check-circle"></i> <strong>Final Project:</strong> Complete Full-Stack Application</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="requirements" class="tab-content">
+                <h2>Requirements</h2>
+                <div class="requirements-container">
+                    <div class="requirement-card">
+                        <i class="fas fa-laptop"></i>
+                        <h3>Hardware Requirements</h3>
+                        <ul>
+                            <li>Computer with 8GB RAM minimum (16GB recommended)</li>
+                            <li>20GB free storage space</li>
+                            <li>Reliable internet connection</li>
+                            <li>Modern web browser (Chrome, Firefox, Edge)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Software Requirements</h3>
+                        <ul>
+                            <li>VS Code or similar code editor</li>
+                            <li>Node.js LTS version</li>
+                            <li>Git version control system</li>
+                            <li>Docker Desktop (for containerization)</li>
+                            <li>PostgreSQL and MongoDB installed</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Prerequisite Knowledge</h3>
+                        <ul>
+                            <li>Basic computer literacy</li>
+                            <li>No prior coding experience required</li>
+                            <li>Problem-solving mindset</li>
+                            <li>English language comprehension</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Time Commitment</h3>
+                        <ul>
+                            <li>15-20 hours per week recommended</li>
+                            <li>24 weeks structured program</li>
+                            <li>Self-paced learning materials</li>
+                            <li>Live sessions and office hours</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Who Should Take This Course?</h3>
+                <div class="audience">
+                    <div class="audience-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>
+                            <h4>Career Changers</h4>
+                            <p>Transition to web development from any field</p>
+                        </div>
+                    </div>
+                    <div class="audience-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Professionals</h4>
+                            <p>Upgrade skills for career advancement</p>
+                        </div>
+                    </div>
+                    <div class="audience-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Students</h4>
+                            <p>Complement formal education with practical skills</p>
+                        </div>
+                    </div>
+                    <div class="audience-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <h4>Entrepreneurs</h4>
+                            <p>Build your own web applications and startups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reviews" class="tab-content">
+                <h2>Student Reviews</h2>
+                <div class="review-summary">
+                    <div class="summary-stats">
+                        <div class="average">
+                            <h3>4.8</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>Overall Rating</p>
+                        </div>
+                        <div class="ratings-breakdown">
+                            <div class="rating-bar">
+                                <span>5 stars</span>
+                                <div class="bar"><div class="fill" style="width: 72%"></div></div>
+                                <span>72%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 stars</span>
+                                <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                                <span>20%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 stars</span>
+                                <div class="bar"><div class="fill" style="width: 5%"></div></div>
+                                <span>5%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 stars</span>
+                                <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                                <span>2%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 star</span>
+                                <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                <span>1%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Michael Rodriguez</h4>
+                                    <p class="title">Former Accountant, Now Full-Stack Developer</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="date">2 weeks ago</span>
+                        </div>
+                        <p class="review-text">"This bootcamp completely changed my career! Coming from an accounting background with zero coding experience, I was nervous. But the structured curriculum and hands-on projects gave me the confidence to apply for developer jobs. I landed my first role 2 months after completion!"</p>
+                        <div class="review-footer">
+                            <span><i class="fas fa-thumbs-up"></i> 58 helpful votes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="avatar">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p class="title">Computer Science Graduate</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="date">1 month ago</span>
+                        </div>
+                        <p class="review-text">"While I learned theory in university, this bootcamp taught me practical skills that employers actually want. The React and Node.js modules were exceptional, and the capstone project became the centerpiece of my portfolio. The career support helped me negotiate a great starting salary."</p>
+                        <div class="review-footer">
+                            <span><i class="fas fa-thumbs-up"></i> 42 helpful votes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="avatar">
+                                    <i class="fas fa-user-cog"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>David Chen</h4>
+                                    <p class="title">Frontend Developer Expanding to Full-Stack</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="date">3 weeks ago</span>
+                        </div>
+                        <p class="review-text">"As a frontend developer, I needed to learn backend technologies to advance my career. This course provided exactly what I needed. The database modules and DevOps sections were particularly valuable. I'm now leading full-stack projects at my company."</p>
+                        <div class="review-footer">
+                            <span><i class="fas fa-thumbs-up"></i> 37 helpful votes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="avatar">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>Dr. Emily Watson</h4>
+                                    <p class="title">Healthcare Professional Building HealthTech</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="date">4 days ago</span>
+                        </div>
+                        <p class="review-text">"I wanted to build a health monitoring application but had no technical background. This bootcamp took me from zero to being able to build my MVP. The instructors were patient and the community support was amazing. I'm now developing the second version of my app!"</p>
+                        <div class="review-footer">
+                            <span><i class="fas fa-thumbs-up"></i> 29 helpful votes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="career" class="tab-content">
+                <h2>Career Outcomes</h2>
+                <div class="career-outcomes">
+                    <div class="outcome-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Full-Stack Developer</h3>
+                        <p class="salary">Average Salary: $95,000 - $130,000</p>
+                        <p class="description">Build complete web applications from frontend to backend</p>
+                        <ul class="skills">
+                            <li>React + Node.js</li>
+                            <li>Database Design</li>
+                            <li>API Development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Frontend Developer</h3>
+                        <p class="salary">Average Salary: $85,000 - $115,000</p>
+                        <p class="description">Create beautiful, responsive user interfaces</p>
+                        <ul class="skills">
+                            <li>React.js</li>
+                            <li>TypeScript</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Developer</h3>
+                        <p class="salary">Average Salary: $90,000 - $125,000</p>
+                        <p class="description">Develop server-side logic and APIs</p>
+                        <ul class="skills">
+                            <li>Node.js</li>
+                            <li>Database Management</li>
+                            <li>API Security</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Web Application Developer</h3>
+                        <p class="salary">Average Salary: $80,000 - $110,000</p>
+                        <p class="description">Build and maintain web applications</p>
+                        <ul class="skills">
+                            <li>Full-Stack Skills</li>
+                            <li>Problem Solving</li>
+                            <li>Agile Development</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Job Market Insights</h3>
+                <div class="market-insights">
+                    <div class="insight">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>High Demand</h4>
+                            <p>Web developers are among the fastest-growing tech jobs with 15% growth projected</p>
+                        </div>
+                    </div>
+                    <div class="insight">
+                        <i class="fas fa-globe-americas"></i>
+                        <div>
+                            <h4>Remote Opportunities</h4>
+                            <p>80% of web development jobs offer remote or hybrid work options</p>
+                        </div>
+                    </div>
+                    <div class="insight">
+                        <i class="fas fa-industry"></i>
+                        <div>
+                            <h4>Diverse Industries</h4>
+                            <p>Opportunities in tech, finance, healthcare, e-commerce, and more</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Career Support Included</h3>
+                <div class="career-support">
+                    <div class="support-item">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Resume & Portfolio Review</h4>
+                        <p>Get expert feedback on your resume and GitHub portfolio</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-comments"></i>
+                        <h4>Mock Interviews</h4>
+                        <p>Practice technical and behavioral interviews</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Job Placement Assistance</h4>
+                        <p>Access to our network of hiring partners</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Career Coaching</h4>
+                        <p>One-on-one career guidance sessions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KritosTeach</h3>
+                    <p>Empowering the next generation of tech professionals through premium online education.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@kritosteach.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KritosTeach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
